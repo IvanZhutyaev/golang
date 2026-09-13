@@ -23,4 +23,19 @@ func main() { // Создание функции
 	} else { //условная конструкция else
 		fmt.Println("a=b")
 	}
+
+	r := 5
+	// конструкция switch case
+	switch r {
+	case 9:
+		fmt.Println("r=9")
+	case 8:
+		fmt.Println("r=8")
+	case 7:
+		fmt.Println("r=7")
+	case 6, 5, 4:
+		fmt.Println("r=6 or r=5 or r=4, but it's maybe not")
+	default:
+		fmt.Println("value of variable is not defined")
+	}
 }

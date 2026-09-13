@@ -38,3 +38,16 @@ if a > b { //условная конструкция if
     fmt.Println("a=b")
 }
 ```
+```go
+a:=5
+// конструкция switch case
+switch(a){ 
+    case 9: fmt.Println("a=9")
+    case 8: fmt.Println("a=8")
+    case 7: fmt.Println("a=7")
+    case 6,5,4: 
+		fmt.Println("a=6 or a=5 or a=4, but it's maybe not")
+	default:	
+    fmt.Println("value of variable is not defined")
+}
+```
