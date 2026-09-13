@@ -43,7 +43,7 @@ a:=5
 // конструкция switch case
 switch(a){ 
     case 9: fmt.Println("a=9")
-    case 8: fmt.Println("a=8")
+    case 8: fmt.Println("a=8"); fallthrough
     case 7: fmt.Println("a=7")
     case 6,5,4: 
 		fmt.Println("a=6 or a=5 or a=4, but it's maybe not")
@@ -51,3 +51,4 @@ switch(a){
     fmt.Println("value of variable is not defined")
 }
 ```
+**fallthrough используется для перехода к следующему случаю**

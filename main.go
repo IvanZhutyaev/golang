@@ -24,13 +24,14 @@ func main() { // Создание функции
 		fmt.Println("a=b")
 	}
 
-	r := 5
+	r := 8
 	// конструкция switch case
 	switch r {
 	case 9:
 		fmt.Println("r=9")
 	case 8:
 		fmt.Println("r=8")
+		fallthrough
 	case 7:
 		fmt.Println("r=7")
 	case 6, 5, 4:
