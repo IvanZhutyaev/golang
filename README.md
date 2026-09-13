@@ -55,6 +55,7 @@ switch(a){
 
 ### Циклы 
 <h4>В GO есть только цикл for!</h4>
+
 ```go
 for i:=1; i<10; i++{ // вариант обычного for
 	fmt.Println(i*i)
