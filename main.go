@@ -39,4 +39,22 @@ func main() { // Создание функции
 	default:
 		fmt.Println("value of variable is not defined")
 	}
+
+	fmt.Println("FOR:")
+	for i := 1; i < 10; i++ { // вариант обычного for
+		fmt.Println(i * i)
+	}
+
+	fmt.Println("WHILE:")
+	var i = 1
+	for i < 10 { // вариант while
+		fmt.Println(i * i)
+		i++
+	}
+
+	fmt.Println("FOREACH:")
+	hello := "hello"
+	for index, value := range hello { // вариант for each
+		fmt.Printf("Index: %d, Value: %c\n", index, value)
+	}
 }

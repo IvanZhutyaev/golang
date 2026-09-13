@@ -52,3 +52,24 @@ switch(a){
 }
 ```
 **fallthrough используется для перехода к следующему случаю**
+
+### Циклы 
+<h4>В GO есть только цикл for!</h4>
+```go
+for i:=1; i<10; i++{ // вариант обычного for
+	fmt.Println(i*i)
+}
+```
+```go
+var i = 1
+for i<10{ // вариант while
+	fmt.Println(i*i)
+	i++
+}
+```
+```go
+str:="hello" 
+for index, value :=range str{ // вариант for each
+	fmt.Printf("Index: %d, Value: %c\n", index, value)
+}
+```
