@@ -28,13 +28,13 @@ const(
 
 ### Условные конструкции
 ```go
-a:=10
-b:=5
-if a>b{
-	fmt.Println("a>b")
-} else if a<b{
-	fmt.Println("a<b")
-}else{
-	fmt.Println("a=b")
+a := 10
+b := 5
+if a > b { //условная конструкция if
+    fmt.Println("a>b")
+} else if a < b { //условная конструкция else if
+    fmt.Println("a<b")
+} else { //условная конструкция else
+    fmt.Println("a=b")
 }
 ```
