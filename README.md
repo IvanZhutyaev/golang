@@ -1,2 +1,2 @@
-# \# GOLANG
+# GOLANG
 
