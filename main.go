@@ -57,4 +57,11 @@ func main() { // Создание функции
 	for index, value := range hello { // вариант for each
 		fmt.Printf("Index: %d, Value: %c\n", index, value)
 	}
+
+	fmt.Println("FOREACH, but:")
+	hello1 := "hello"
+	for _, value := range hello1 { // вариант for each, но без индекса
+		fmt.Printf(" %c ", value)
+	}
+	fmt.Printf(" %c ", 10)
 }

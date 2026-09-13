@@ -73,3 +73,10 @@ for index, value :=range str{ // вариант for each
 	fmt.Printf("Index: %d, Value: %c\n", index, value)
 }
 ```
+```go
+str:="hello" 
+for _, value :=range str{ // вариант for each, без индекса
+	fmt.Printf(" %c: ",value)
+}
+fmt.Printf(" %c: ",10)
+```
