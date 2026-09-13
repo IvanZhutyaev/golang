@@ -12,6 +12,15 @@ func main() { // Создание функции
 	var intval = 78
 	var floatval = 56.34233
 	var boolval = true
-	fmt.Printf("%v, %v, %e, %t", str, intval, floatval, boolval)
-
+	fmt.Printf("%v, %v, %e, %t", str, intval, floatval, boolval) //форматированный вывод
+	fmt.Println()
+	a := 10
+	b := 5
+	if a > b { //условная конструкция if
+		fmt.Println("a>b")
+	} else if a < b { //условная конструкция else if
+		fmt.Println("a<b")
+	} else { //условная конструкция else
+		fmt.Println("a=b")
+	}
 }
