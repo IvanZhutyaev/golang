@@ -109,3 +109,7 @@ return z
 }
 ```
 **Функция может возвращать несколько значений**
+```go
+var f func(int, int) int = add
+fmt.Println(f(3,4))
+```

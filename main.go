@@ -65,15 +65,20 @@ func main() { // Создание функции
 	//}
 	//fmt.Printf(" %c ", 10)
 
-	var a = add(1, 2)
-	var b = add(2, 2)
-	fmt.Println(a)
-	fmt.Println(b)
+	//var a = add(1, 2)
+	//var b = add(2, 2)
+	//fmt.Println(a)
+	//fmt.Println(b)
+	//
+	//var a1 = add1(1, 2)
+	//var b1 = add1(2, 2)
+	//fmt.Println(a1)
+	//fmt.Println(b1)
 
-	var a1 = add1(1, 2)
-	var b1 = add1(2, 2)
-	fmt.Println(a1)
-	fmt.Println(b1)
+	var f func(int, int) int = add
+	fmt.Println(f(3, 4))
+	var x = f(4, 5)
+	fmt.Println(x)
 }
 
 func add(a, b int) (z int) {
