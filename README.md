@@ -165,3 +165,15 @@ fmt.Println("Value:",*p) //Value: 0 -значение по умолчанию
 fmt.Println("Value:",*p) //Value: 8
 ```
 **Указатели на указатели существуют!<br>Бывают массивы указателей<br>Указатели могут выступать в качестве параметров функции**
+```go
+d := 5
+var p *int
+p = &d
+fmt.Println("Before:", d) //5
+changeValue(p)
+fmt.Println("After:", d) //25
+
+func changeValue(x *int) {
+    *x = (*x) * (*x)
+}
+```
