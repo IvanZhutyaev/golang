@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() { // Создание функции
 	//svyat := "svyat"                          // Инициализация
 	//var andrey string                         // Объявление
@@ -79,28 +77,28 @@ func main() { // Создание функции
 	//fmt.Println(f(3, 4))
 	//var x = f(4, 5)
 	//fmt.Println(x)
-	result := action(1, 2, add)
-	fmt.Println(result)
-
-	result1 := action(3, 4, multiply)
-	fmt.Println(result1)
+	//result := action(1, 2, add)
+	//fmt.Println(result)
+	//
+	//result1 := action(3, 4, multiply)
+	//fmt.Println(result1)
 }
 
-func add(a, b int) (z int) {
-	z = a + b
-	return
-}
+//func add(a, b int) (z int) {
+//	z = a + b
+//	return
+//}
 
 //func add1(a, b int) int {
 //	return a + b
 //}
 
-func multiply(a, b int) (z int) {
-	z = a * b
-	return z
-}
-
-func action(n int, m int, operation func(int, int) int) int {
-	var z = operation(n, m)
-	return z
-}
+//func multiply(a, b int) (z int) {
+//	z = a * b
+//	return z
+//}
+//
+//func action(n int, m int, operation func(int, int) int) int {
+//	var z = operation(n, m)
+//	return z
+//}

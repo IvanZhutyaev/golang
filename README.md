@@ -114,3 +114,9 @@ var f func(int, int) int = add
 fmt.Println(f(3,4))
 ```
 **Каждая функция имеет свой тип**
+### Функции могут принимать в качестве параметра другие функции
+```go
+func sum(numbers[] int, criteria func(int) bool) int{} //параметр сигнатура
+//Пример вызова
+sumOfEvens:=sum(slice, isEven)
+```
