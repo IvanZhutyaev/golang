@@ -85,12 +85,16 @@ func main() { // Создание функции
 	//result1 := action(3, 4, multiply)
 	//fmt.Println(result1)
 
-	var x int = 4
-	var p *int
-	p = &x
-	fmt.Println(p)
-	fmt.Println(*p)
+	//var x int = 4
+	//var p *int
+	//p = &x
+	//fmt.Println(p)
+	//fmt.Println(*p)
 
+	p := new(int)
+	fmt.Println("Value:", *p)
+	*p = 8
+	fmt.Println("Value:", *p)
 }
 
 //func add(a, b int) (z int) {
