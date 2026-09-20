@@ -90,8 +90,7 @@ fmt.Printf(" %c: ",10)
 
 ## Функции и их параметры
 ```go
-func hello(){}
-
-func increment(x int){}
-func add(numbers ...int){}
+func hello(){} //создание функции
+func increment(x int){} //функция с парметром
+func add(numbers ...int){} //функция с несколькими параметрами
 ```
