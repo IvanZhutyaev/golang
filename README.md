@@ -120,3 +120,19 @@ func sum(numbers[] int, criteria func(int) bool) int{} //параметр сиг
 //Пример вызова
 sumOfEvens:=sum(slice, isEven)
 ```
+### Функции также может быть результатом другой функции
+```go
+func selectFn(n int) (func(int, int) int){
+	if n==1{
+		return add
+	} else if n==2{
+	    return subtract
+	}else{
+		return multiply
+    }
+}
+
+//Пример вызова
+f:=selectFn(1)
+fmt.Println(f(3,4))
+```
