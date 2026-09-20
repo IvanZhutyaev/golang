@@ -94,3 +94,18 @@ func hello(){} //создание функции
 func increment(x int){} //функция с парметром
 func add(numbers ...int){} //функция с несколькими параметрами
 ```
+### Пример возвращаемой функции
+```go
+//1
+func add(a, b int) (z int) {
+	z = a + b
+	return
+}
+
+//2
+func add1(a, b int) int {
+z = a + b
+return z
+}
+```
+**Функция может возвращать несколько значений**
