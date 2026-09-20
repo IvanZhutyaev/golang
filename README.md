@@ -113,3 +113,4 @@ return z
 var f func(int, int) int = add
 fmt.Println(f(3,4))
 ```
+**Каждая функция имеет свой тип**

@@ -75,16 +75,32 @@ func main() { // Создание функции
 	//fmt.Println(a1)
 	//fmt.Println(b1)
 
-	var f func(int, int) int = add
-	fmt.Println(f(3, 4))
-	var x = f(4, 5)
-	fmt.Println(x)
+	//var f func(int, int) int = add
+	//fmt.Println(f(3, 4))
+	//var x = f(4, 5)
+	//fmt.Println(x)
+	result := action(1, 2, add)
+	fmt.Println(result)
+
+	result1 := action(3, 4, multiply)
+	fmt.Println(result1)
 }
 
 func add(a, b int) (z int) {
 	z = a + b
 	return
 }
-func add1(a, b int) int {
-	return a + b
+
+//func add1(a, b int) int {
+//	return a + b
+//}
+
+func multiply(a, b int) (z int) {
+	z = a * b
+	return z
+}
+
+func action(n int, m int, operation func(int, int) int) int {
+	var z = operation(n, m)
+	return z
 }
