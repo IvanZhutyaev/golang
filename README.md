@@ -82,6 +82,10 @@ for _, value :=range str{ // вариант for each, без индекса
 fmt.Printf(" %c: ",10)
 ```
 
+### Массивы
+```var numbers [5]int```**- объявление массива**<br>
+```var numbers [5] int = [5]int{1,2,3,4,5}```**- инициализация массива**
+
 **len() - длина массива**
 
 ## Функции и их параметры
@@ -91,7 +95,3 @@ func hello(){}
 func increment(x int){}
 func add(numbers ...int){}
 ```
-
-### Массивы
-```var numbers [5]int```**- объявление массива**<br>
-```var numbers [5] int = [5]int{1,2,3,4,5}```**- инициализация массива**
