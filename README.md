@@ -229,8 +229,8 @@ func main(){
 	Name string
 	Age int
  }
- // Создание конструктора
-func (p Person) NewPerson(name string, age int)(*Person){
+ // Создание конструктора(без отношения к структуре)
+func NewPerson(name string, age int)(*Person){
 	return &Person{
 		Name:name, 
 		Age:age,
