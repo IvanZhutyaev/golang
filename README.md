@@ -222,3 +222,22 @@ func main(){
 	fmt.Println(tom.speak("i am tom"))
  }
  ```
+
+ ## Конструктор
+ ```go
+ type Person struct{
+	Name string
+	Age int
+ }
+ // Создание конструктора
+func (p Person) NewPerson(name string, age int)(*Person){
+	return &Person{
+		Name:name, 
+		Age:age,
+	}
+}
+func main(){
+	tom:=NewPerson("ASdas", 123)
+	fmt.Println(tom)
+}
+ ```
