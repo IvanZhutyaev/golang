@@ -21,7 +21,6 @@ func FindProducts(products [5]Product, article string) (*Product, error) {
 	return &Product{}, errors.New("not found")
 }
 
-// NewProduct — конструктор для создания продукта со всеми полями.
 func NewProduct(art, title string, price float64, quantity int) Product {
 	return Product{
 		art:      art,
@@ -36,10 +35,10 @@ func QuantityCheck(product *Product, quantity int) bool {
 }
 func BuyProduct(product *Product, quantity int) error {
 	if quantity <= 0 {
-		return errors.New("нахуй 0?")
+		return errors.New("0 нельзя")
 	}
 	if !QuantityCheck(product, quantity) {
-		return errors.New("дохуя")
+		return errors.New("много")
 	}
 	product.quantity -= quantity
 	fmt.Println(product.price * float64(quantity))
